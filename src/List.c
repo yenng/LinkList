@@ -26,7 +26,6 @@ LinkList* addList(LinkList* NewLink, int value, List* next){
 	ListElement = createListElement(value,next);
 	LinkList* baseLink = malloc(sizeof(LinkList));
 	baseLink = createLinkedList();
-	int i = 0;
 	baseLink = NewLink;
 	
 	
@@ -42,7 +41,6 @@ LinkList* addList(LinkList* NewLink, int value, List* next){
 			NewLink->tail = ListElement;
 		}
 		
-		i++;
 	
 	return NewLink;
 }

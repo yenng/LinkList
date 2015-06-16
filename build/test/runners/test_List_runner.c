@@ -30,7 +30,8 @@ char* GlobalOrderError;
 //=======External Functions This Runner Calls=====
 extern void setUp(void);
 extern void tearDown(void);
-extern void test_linked_list(void);
+extern void test_linked_list_return_5(void);
+extern void test_linked_list_return_3(void);
 
 
 //=======Test Reset Option=====
@@ -46,7 +47,8 @@ int main(void)
 {
   Unity.TestFile = "test_List.c";
   UnityBegin();
-  RUN_TEST(test_linked_list, 13);
+  RUN_TEST(test_linked_list_return_5, 14);
+  RUN_TEST(test_linked_list_return_3, 23);
 
   return (UnityEnd());
 }

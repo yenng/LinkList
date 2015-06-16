@@ -3,14 +3,21 @@
   :path: test
   :file: test_List.c
 :successes:
-- :test: test_linked_list
-  :line: 13
+- :test: test_linked_list_return_5
+  :line: 14
+  :message: ''
+- :test: test_linked_list_return_3
+  :line: 23
   :message: ''
 :failures: []
 :ignores: []
 :counts:
-  :total: 1
-  :passed: 1
+  :total: 2
+  :passed: 2
   :failed: 0
   :ignored: 0
-:stdout: []
+:stdout:
+- 'NewLink->head->value = 5 '
+- NewLink->head->next = 0
+- 'NewLink->head->value = 3 '
+- NewLink->head->next = 0
